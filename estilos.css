@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	background-color: rgb(202, 228, 55);
+	font-family: Verdana, Geneva, Tahoma;
+}
+
+.logo{
+    height: 100px;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+input[type="sumit"],
+input[type="search"] {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+input[type="sumit"]:hover,
+input[type="search"]:hover {
+  background-color: #ff4d4d;
+}
+header {
+	padding: 10px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: rgb(202, 50, 50);
+}
+
+
+.imagen-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, 0.699) 0%, rgba(0, 0, 0, 0.699) 100%), url(Fondo.webp);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.imagen-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.imagen-principal {
+		font-size: 20px;
+	}
+
+	.imagen-principal .descripcion {
+		max-width: 100%;
+	}
+}
+
+
+p {
+    color:rgb(0, 0, 0);
+    text-align:left;
+    padding: 10px;
+    font-weight: normal;
+	font-size: 1em;
+	margin: 20px 10px;
+}
+
+
+
+section nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+    font-weight: normal;
+	font-size: 1em;
+	margin: 20px 10px;
+}
+
+ul li {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 60px, 10px;
+}
+
+ul li a:hover,
+ul li a.activo {
+	color: rgba(255, 53, 53, 0.671);
+}
+
+.mw-headline {
+	color:rgba(166, 160, 216, 0.959)
+}
+
+.pie-pagina .grupo{
+    background-color: #b62020;
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+input[type="text"],
+  select
+ {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid rgb(19, 10, 10);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: rgb(243, 255, 189);
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; ;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #ff4d4d;
+  }
+  
+  
+.container1 {
+    border-radius: 5px;
+    background-color: #c72424;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
